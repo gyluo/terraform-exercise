@@ -9,6 +9,7 @@ resource "aws_db_instance" "example" {
   name = "example_database"
   username = "admin"
   password = "${var.db_password}"
+  skip_final_snapshot = true
 }
 
 terraform {
